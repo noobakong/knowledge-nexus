@@ -1,6 +1,7 @@
 ---
 slug: welcome
 title: Welcome
+authors: [akong, simle]
 tags: [facebook, hello, docusaurus]
 ---
 
