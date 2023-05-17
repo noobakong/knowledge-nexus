@@ -1,0 +1,48 @@
+---
+slug: mdx-blog-post
+title: MDX Demo
+authors: [akong]
+tags: [mdx, demo]
+---
+
+import { Sandpack } from '@codesandbox/sandpack-react';
+
+> 记录一下使用MDX的过程
+
+## HTML
+
+```js
+<button onClick={() => alert('button clicked!')}>Click me!</button>
+<img style={{ width: '100px', height: '100px'}} src="https://github.com/noobakong.png" alt="github-img" />
+```
+
+<button onClick={() => alert('button clicked!')}>Clicddk me!</button>
+<img style={{ width: '100px', height: '100px'}} src="https://github.com/noobakong.png" alt="github-img" />
+
+## CodeSandBox PlayGround
+export const reactCode = `import React, { useState } from 'react';
+export default function App() {
+  const [number, setNumber] = useState(0);
+  return (
+    <div>
+      <h1>{number}</h1>
+      <button onClick={() => {
+        setNumber(number + 1);
+        setNumber(number + 1);
+        setNumber(number + 1);
+      }}>
+        +3
+      </button>
+    </div>
+  );
+}
+`;
+
+<div>
+  <Sandpack
+    template="react"
+    files={{
+      '/App.js': reactCode
+    }}
+  />
+</div>
