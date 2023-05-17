@@ -5,6 +5,10 @@ authors: akong
 tags: [ai, prompt]
 ---
 
+> 本课程主要介绍 ChatGPT 提示工程，由 Isa Fulford 教授和作者共同授课。课程将关注指令调整的大型语言模型（LLM）及其最佳实践，强调指令调整?的 LLM 更适合实际应用，具有更高的安全性和协调性。作者提醒，当使用指令调整 LLM 时，应将其视为一个聪明但不了解任务细节的人，给出明确、具体的指令。内容总结于 https://github.com/datawhalechina/prompt-engineering-for-developers 。
+
+<!--truncate-->
+
 ## 简介
 
 > 本课程主要介绍 ChatGPT 提示工程，由 Isa Fulford 教授和作者共同授课。课程将关注指令调整的大型语言模型（LLM）及其最佳实践，强调指令调整的 LLM 更适合实际应用，具有更高的安全性和协调性。作者提醒，当使用指令调整 LLM 时，应将其视为一个聪明但不了解任务细节的人，给出明确、具体的指令。在下一章中，将讨论如何创建更清晰的提示和给 LLM 时间去思考的重要原则。
