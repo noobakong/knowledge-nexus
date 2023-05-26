@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Knowledge Nexus',
-  tagline: 'Akong Test oo',
+  title: "Akong's Blog",
+  tagline: '当学生准备好了，老师就会出现',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
