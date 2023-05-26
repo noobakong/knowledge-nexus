@@ -6,7 +6,8 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
-import ReactAplayer from 'react-aplayer';
+// import ReactAplayer from 'react-aplayer';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -15,15 +16,22 @@ function HomepageHeader() {
       <div className={styles.container}>
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <ReactAplayer
-            mini={true}
-            loop="all"
-            audio={{
-              name: '10 Hz Alpha Waterfall',
-              cover: 'https://github.com/noobakong.png',
-              url: 'https://s.newscdn.cn/akong/rain.m4a',
-            }}
-          />
+        <BrowserOnly fallback={<div>Loading...</div>}>
+          {() => {
+            const ReactAplayer = require('react-aplayer').default;
+            return (
+              <ReactAplayer
+                mini={true}
+                loop="all"
+                audio={{
+                  name: '10 Hz Alpha Waterfall',
+                  cover: 'https://github.com/noobakong.png',
+                  url: 'https://s.newscdn.cn/akong/rain.m4a',
+                }}
+              />
+            );
+          }}
+        </BrowserOnly>
         {/* <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
