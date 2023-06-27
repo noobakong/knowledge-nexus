@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Akong Blog",
-  tagline: '当学生准备好了，老师就会出现',
+  // tagline: '当学生准备好了，老师就会出现',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -72,11 +72,11 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'mainSidebar',
             position: 'left',
-            label: 'Tutorials',
+            label: '文档',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: '博客', position: 'left'},
           {
             href: 'https://github.com/noobakong/knowledge-nexus',
             label: 'GitHub',
@@ -102,13 +102,15 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} knowledge-nexus for akong, Inc. Built with Docusaurus.`,
+        copyright: `当学生准备好了，老师就会出现`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),
+
+  plugins: ["docusaurus-plugin-less"],
 };
 
 module.exports = config;
