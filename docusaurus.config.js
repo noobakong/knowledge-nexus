@@ -110,7 +110,7 @@ const config = {
       },
     }),
 
-  plugins: ["docusaurus-plugin-less"],
+  plugins: ['docusaurus-plugin-less-hash'],
 };
 
 module.exports = config;

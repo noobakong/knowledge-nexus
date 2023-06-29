@@ -3741,10 +3741,10 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-plugin-less@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/docusaurus-plugin-less/-/docusaurus-plugin-less-2.0.2.tgz#63bf04a5539a3b8ddc38bf527b51eb135b60f528"
-  integrity sha512-ez6WSSvGS8HoJslYHeG5SflyShWvHFXeTTHXPBd3H1T3zgq9wp6wD7scXm+rXyyfhFhP5VNiIqhYB78z4OLjwg==
+docusaurus-plugin-less-hash@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-less-hash/-/docusaurus-plugin-less-hash-0.0.2.tgz#fba45ddb4e22b7b20ad709a8b3f0678bc08ebd5c"
+  integrity sha512-a/MEU3sGXRBQJcuEzw14UzEC+Rkudgg59VvLOoHWtAR0jaK+28TZdHgACfpr2kNP5XL/XcJkHCAMSCJkgZ/dYQ==
 
 dom-converter@^0.2.0:
   version "0.2.0"
