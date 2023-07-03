@@ -3,35 +3,23 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import styles from './index.module.less';
-import BrowserOnly from '@docusaurus/BrowserOnly';
 import { EveryDayText } from '@site/src/components/EveryDayText';
+import { MusicPlayer } from '@site/src/components/Aplayer';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    // <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={styles.heroBanner}>
       <div className={styles.container}>
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className={styles.header}>
+          <h2 className={styles.title}>{siteConfig.title}</h2>
+          <div className={styles.music}>
+            <MusicPlayer />
+          </div>
+        </div>
         <EveryDayText />
-        <BrowserOnly fallback={<div>Loading...</div>}>
-          {() => {
-            const ReactAplayer = require('react-aplayer').default;
-            return (
-              <ReactAplayer
-                mini={true}
-                loop="all"
-                audio={{
-                  name: '10 Hz Alpha Waterfall',
-                  cover: 'https://github.com/noobakong.png',
-                  url: 'https://s.newscdn.cn/akong/rain.m4a',
-                }}
-              />
-            );
-          }}
-        </BrowserOnly>
       </div>
     </header>
   );

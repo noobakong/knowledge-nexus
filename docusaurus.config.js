@@ -64,7 +64,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Knowledge Nexus',
+        title: 'noobakong',
         // logo: {
         //   alt: 'Knowledge Nexus Logo',
         //   src: 'img/logo.svg',
@@ -81,29 +81,56 @@ const config = {
             href: 'https://github.com/noobakong/knowledge-nexus',
             label: 'GitHub',
             position: 'right',
-            
           },
         ],
       },
-      footer: {
-        style: 'dark',
-        links: [
-          // {
-          //   title: 'More',
-          //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: '/blog',
-          //     },
-          //     {
-          //       label: 'GitHub',
-          //       href: 'https://github.com/facebook/docusaurus',
-          //     },
-          //   ],
-          // },
-        ],
-        copyright: `当学生准备好了，老师就会出现`,
-      },
+      // footer: {
+      //   style: 'dark',
+        
+      //   links: [
+      //     {
+      //       title: '雷雨白噪音',
+      //       items: [
+      //         {
+      //           html: `<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=180 height=52 src="//music.163.com/outchain/player?type=2&id=32070215&auto=0&height=32"></iframe>`
+      //         //   html: `
+      //         //   <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
+      //         //     <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" width="114" height="51" />
+      //         //   </a>
+      //         // `,
+      //         }
+              
+      //       ]
+      //     },
+      //     {
+      //       title: '友链',
+      //       items: [
+      //         {
+      //           label: 'Blog',
+      //           to: '/blog',
+      //         },
+      //         {
+      //           label: 'GitHub',
+      //           href: 'https://github.com/facebook/docusaurus',
+      //         },
+      //       ],
+      //     },
+      //     // {
+      //     //   title: 'More',
+      //     //   items: [
+      //     //     {
+      //     //       label: 'Blog',
+      //     //       to: '/blog',
+      //     //     },
+      //     //     {
+      //     //       label: 'GitHub',
+      //     //       href: 'https://github.com/facebook/docusaurus',
+      //     //     },
+      //     //   ],
+      //     // },
+      //   ],
+      //   // copyright: `当学生准备好了，老师就会出现`,
+      // },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
