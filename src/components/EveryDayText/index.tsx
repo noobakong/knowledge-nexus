@@ -20,7 +20,7 @@ export const EveryDayText = () => {
     <div className={styles.container}>
       {showText || '☀️'}
       <div className={styles.from}>
-        <Link to="/docs/播客/张潇雨微博精选" className={styles.link}>
+        <Link to="/docs/life/播客/张潇雨微博精选" className={styles.link}>
           @文案来源
         </Link>
       </div>

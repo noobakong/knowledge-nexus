@@ -74,7 +74,13 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'mainSidebar',
             position: 'left',
-            label: '文档',
+            label: 'dev-wiki',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'lifeSidebar',
+            position: 'left',
+            label: 'life-wiki',
           },
           {to: '/blog', label: '博客', position: 'left'},
           {
