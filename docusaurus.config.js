@@ -50,7 +50,7 @@ const config = {
           showReadingTime: true,
           postsPerPage: 'ALL', // 一页展示完
           blogSidebarTitle: 'All posts',
-          blogSidebarCount: 'ALL',  
+          blogSidebarCount: 'ALL',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -170,6 +170,7 @@ const config = {
         path: './daily',
         blogSidebarTitle: '2023',
         blogSidebarCount: 'ALL',
+        sortPosts: 'ascending',
       },
     ],
   ],
