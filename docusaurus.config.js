@@ -3,6 +3,8 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+// @ts-ignore
+const recentPosts = require("./.docusaurus/docusaurus-plugin-content-blog/daily/blog-post-list-prop-daily.json");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -46,6 +48,9 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          postsPerPage: 'ALL', // 一页展示完
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',  
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -74,15 +79,16 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'mainSidebar',
             position: 'left',
-            label: 'dev-wiki',
+            label: '🚀 Dev',
           },
           {
             type: 'docSidebar',
             sidebarId: 'lifeSidebar',
             position: 'left',
-            label: 'life-wiki',
+            label: '🏞️ Life',
           },
-          {to: '/blog', label: '博客', position: 'left'},
+          {to: '/blog', label: '✍️ Blog', position: 'left'},
+          {to: `${recentPosts.items[0].permalink}`, label: '📆 daily', position: 'right'},
           {
             href: 'https://github.com/noobakong/knowledge-nexus',
             label: 'GitHub',
@@ -143,7 +149,29 @@ const config = {
       },
     }),
 
-  plugins: ['docusaurus-plugin-less-hash'],
+  plugins: [
+    'docusaurus-plugin-less-hash',
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        id: 'daily',
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: 'daily',
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: './daily',
+        blogSidebarTitle: '2023',
+        blogSidebarCount: 'ALL',
+      },
+    ],
+  ],
 };
 
 module.exports = config;
