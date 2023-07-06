@@ -4,7 +4,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // @ts-ignore
-const recentPosts = require("./.docusaurus/docusaurus-plugin-content-blog/daily/blog-post-list-prop-daily.json");
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -65,6 +65,7 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
@@ -88,7 +89,7 @@ const config = {
             label: '🏞️ Life',
           },
           {to: '/blog', label: '✍️ Blog', position: 'left'},
-          {to: `${recentPosts.items[0].permalink}`, label: '📆 daily', position: 'right'},
+          {to: '/daily/2023-07', label: '📆 daily', position: 'right'},
           {
             href: 'https://github.com/noobakong/knowledge-nexus',
             label: 'GitHub',
