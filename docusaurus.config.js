@@ -75,21 +75,21 @@ const config = {
         //   alt: 'Knowledge Nexus Logo',
         //   src: 'img/logo.svg',
         // },
-        items: [
+        items: [ 
+          {to: '/blog', label: '✍️ Blog', position: 'left'},
+          {to: '/daily/2023-07', label: '📆 Daily', position: 'left'},
           {
             type: 'docSidebar',
             sidebarId: 'mainSidebar',
-            position: 'left',
+            position: 'right',
             label: '🚀 Dev',
           },
           {
             type: 'docSidebar',
             sidebarId: 'lifeSidebar',
-            position: 'left',
+            position: 'right',
             label: '🏞️ Life',
           },
-          {to: '/blog', label: '✍️ Blog', position: 'left'},
-          {to: '/daily/2023-07', label: '📆 daily', position: 'right'},
           {
             href: 'https://github.com/noobakong/knowledge-nexus',
             label: 'GitHub',
@@ -170,7 +170,7 @@ const config = {
         path: './daily',
         blogSidebarTitle: '2023',
         blogSidebarCount: 'ALL',
-        sortPosts: 'ascending',
+        sortPosts: 'descending',
       },
     ],
   ],
