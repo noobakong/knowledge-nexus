@@ -27,21 +27,29 @@
   /* color: #212121; */
 }
 
-/* 这仅应用于以 "sidebarItemLinkActive" 开头的类名 */
-[class^="sidebarItemLinkActive"] {
-  font-size: 2rem !important;
-  color: red !important;
+/* dark title */
+[data-theme='dark'] [class^="title"] {
+  text-shadow: 1px 1px 1px #ffffffa6;
 }
+
+
+
+/* 这仅应用于以 "sidebarItemLinkActive" 开头的类名 */
 [class^="sidebarItemLink"]:not([class^="sidebarItemLinkActive"]) {
   text-shadow: 1px 1px 1px #00000076;
 }
 
+[class*="sidebarItemLinkActive"], [class*="sidebarItemLinkActive"].a:hover {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: --ifm-color-primary;
+}
 
 
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #1a84cf;
+  --ifm-color-primary: #85cbf9;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
@@ -49,11 +57,21 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --ifm-link-color: #1a84cf;
+  --ifm-link-color: #85cbf9;
 }
 
 .navbar__link--active {
-  /* text-shadow: 1px 1px 1px #00000076;
-  font-weight: bold; */
-  border: 1px solid #000;
+  /* text-decoration: underline; */
+  border-bottom: 1px dashed #000;
 }
+
+.table-of-contents__link--active {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: --ifm-color-primary;
+}
+
+h1, h2 {
+  font-size: 80% !important;
+}
+
