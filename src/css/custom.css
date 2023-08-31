@@ -4,6 +4,7 @@
  * work well for content-centric websites.
  */
 
+ 
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #105383;
@@ -26,6 +27,18 @@
   /* color: #212121; */
 }
 
+/* 这仅应用于以 "sidebarItemLinkActive" 开头的类名 */
+[class^="sidebarItemLinkActive"] {
+  font-size: 2rem !important;
+  color: red !important;
+}
+[class^="sidebarItemLink"]:not([class^="sidebarItemLinkActive"]) {
+  text-shadow: 1px 1px 1px #00000076;
+}
+
+
+
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #1a84cf;
@@ -39,3 +52,8 @@
   --ifm-link-color: #1a84cf;
 }
 
+.navbar__link--active {
+  /* text-shadow: 1px 1px 1px #00000076;
+  font-weight: bold; */
+  border: 1px solid #000;
+}
