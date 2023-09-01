@@ -1,7 +1,6 @@
 ---
 slug: electron-node
 title: Electron中的Node原生模块
-authors: [akong]
 tags: [electron, node-gyp]
 ---
 关于electron项目中遇到的的 `.node` 文件打包的问题和知识总结。

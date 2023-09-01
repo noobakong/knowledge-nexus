@@ -47,9 +47,9 @@ const config = {
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           postsPerPage: 'ALL', // 一页展示完
-          blogSidebarTitle: 'All posts',
+          blogSidebarTitle: ' ',
           blogSidebarCount: 'ALL',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -92,8 +92,9 @@ const config = {
           // },
           {
             href: 'https://github.com/noobakong/knowledge-nexus',
-            label: 'GitHub',
             position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           },
         ],
       },

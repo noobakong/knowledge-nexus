@@ -1,7 +1,6 @@
 ---
 slug: wuenda-prompt-note
 title: 吴恩达prompt课程学习笔记
-authors: akong
 tags: [ai, prompt]
 ---
 
