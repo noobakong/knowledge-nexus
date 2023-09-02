@@ -62,11 +62,11 @@
 }
 
 [class*="sidebarItemLinkActive"], [class*="sidebarItemLinkActive"].a:hover {
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-color: --ifm-color-primary;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 8px;
+  text-decoration-line: underline !important;
+  text-decoration-style: solid !important;
+  text-decoration-color: --ifm-color-primary !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 8px !important;
 }
 
 
@@ -87,11 +87,11 @@
 }
 
 .table-of-contents__link--active {
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-color: --ifm-color-primary;
-  text-decoration-thickness: 1px;  /* 粗细 */
-  text-underline-offset: 5px;  /* 距离 */
+  text-decoration-line: underline !important;
+  text-decoration-style: solid !important;
+  text-decoration-color: --ifm-color-primary !important;
+  text-decoration-thickness: 1px !important;  /* 粗细 */
+  text-underline-offset: 5px !important;  /* 距离 */
 }
 
 
