@@ -19,3 +19,16 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .vercel
+
+
+node_modules
+.next
+.DS_Store
+yarn-error.log
+.yalc
+yalc.lock
+
+public/*.st
+public/*.toml
+public/.nextra
+.vercel

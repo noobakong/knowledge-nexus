@@ -1,0 +1,22 @@
+{
+  "blog": {
+    "theme": {
+      "sidebar": false
+    },
+    "title": "✍️ 博客",
+    "type": "page"
+  },
+  "docs": {
+    "title": "文档",
+    "type": "page"
+  },
+  "examples": {
+    "title": "示例",
+    "type": "page"
+  },
+  "index": {
+    "display": "hidden",
+    "title": "简介",
+    "type": "page"
+  }
+}

@@ -1,0 +1,12 @@
+.audioPlayer {
+  .aplayer.aplayer-narrow .aplayer-pic {
+    background-color: transparent !important;
+    width: 100px;
+  }
+  .aplayer {
+    box-shadow: none !important; 
+  }
+  .aplayer.aplayer-narrow {
+    box-shadow: none !important;
+  }
+}
